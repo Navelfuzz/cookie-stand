@@ -2,62 +2,127 @@ body {
   background-color:  #ffb39c;
 }
 
+/* BUTTONS */
+button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 20px;
+  box-shadow: #c50e88 4px 4px 0 0;
+  color: #b81135;
+  display: inline-block;
+  font-size: 15px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10pxl;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.sales-button {
+  display:flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
+.home-button {
+  display:flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* BUTTON END */
+
+
+/* IMAGES  */
+
+.salmon-pic-left {
+  transform: scaleX(-1);
+  max-width: 19%;
+  float: left
+}
+
+.salmon-pic-right {
+  transform: scaleX(1);
+  max-width: 19%;
+  max-width: 19%;
+  float: right
+}
+
+.salmon-cookie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.shirt {
+  height: 300px;
+}
+
+.fish-products {
+  display:flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+.chinook {
+  width: 40%;
+
+}
+
+.family-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+
+}
+
+
+/* IMAGES END  */
+
 h1 {
   font-size: 40px;
-  color: black;
+  color: Black;
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h2, ul {
+h2 {
+  font-size: 30px;
   text-align: center;
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
 
 }
 
-rticle {
-  border: 5px double #020005;
-  background-color: #75abe9;
-  padding: 30px;
-  margin-top: 30px;
+p {
+  font-family: 'Inria Serif', serif;
+  color: black;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-article h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.75em;
-  padding-bottom: 10px;
-  text-decoration: underline;
-}
 
-ul {
-  font-size: 1.75em;
-  font-family: 'Archivo', sans-serif;
-  list-style-type: "🐾   ";
-  list-style-position: inside;
-  margin-bottom: 15px;
-}
+h3 {
+  font-size: 30px;
+  color: rgb(99, 0, 114);
+  margin-bottom: 20px;
+  margin-top: 25px;
+  text-align: center;
+  font-family: 'Inria Serif', serif
 
-li {
-  font-family: 'Archivo', sans-serif;
-  font-size: .75em;
-  margin-top: 15px;
-
-}
-
-img {
-  margin-bottom: 30px;
-}
-
-table * {
-  font-family: 'Archivo', sans-serif;
-  background-color: white;
-  border: 1px double #020005;
-  padding: 8px;
 }
 
 th {
@@ -75,6 +140,25 @@ footer {
   padding-right: 10px;
   height: 100px;
   margin-top: 30px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Inria Serif', serif
 
+}
+
+
+/* TABLES STYLE PAGE */
+
+table * {
+  font-family: 'Archivo', sans-serif;
+  color: rgb(114, 0, 84);
+  background-color: white;
+  border: 1px double #b6035f;
+  padding: 8px;
+ 
+}
+
+.data-chart {
+  display:flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-top: 200px;
 }
