@@ -3,6 +3,7 @@
 /** Global Variables & Declarations */
 /** ------ Grab the window into the DOM ------ */
 let salesLists = document.getElementById('sales-lists');
+let myForm = document.getElementById('my-form');
 
 /** ------ Arrays ------ */
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
@@ -14,6 +15,31 @@ function renderAllCities(){
     cityArray[i].render();
   }
 }
+
+/** ------ Form input ------ */
+function handleSubmit(event){
+  event.preventDefault();
+
+  let inputCity = event.target.inputCity.value;
+  let minCust = Number(event.target.minCust.value);
+  let maxCust = Number(event.target.maxCust.value);
+  let avgCookies = Number(event.target.avgCookies.value);
+
+  let newStore = new Store(inputCity, minCust, maxCust, avgCookies);
+
+  cityArray.push(newStore);
+
+  let table = document.querySelector('table');
+  table.deleteRow(table.rows.length - 1);
+
+  newStore.render();
+
+  footerFunction();
+
+  myForm.reset();
+}
+
+myForm.addEventListener('submit', handleSubmit);
 
 /** Header Row Function */
 function headerFunction(){
@@ -126,3 +152,4 @@ cityArray.push(seattle, tokyo, dubai, paris, lima);
 headerFunction();
 renderAllCities();
 footerFunction();
+
