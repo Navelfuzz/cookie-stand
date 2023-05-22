@@ -152,4 +152,3 @@ cityArray.push(seattle, tokyo, dubai, paris, lima);
 headerFunction();
 renderAllCities();
 footerFunction();
-
