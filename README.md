@@ -12,18 +12,8 @@ ___
 ___
 
 ### Lab 09 Lighthouse
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ![lab09lighthouse](https://github.com/Navelfuzz77/cookie-stand/assets/130828574/f805ddc0-aad5-433d-96af-1712a01404af)
-
-=======
-![lab09lighthouse](https://github.com/Navelfuzz77/cookie-stand/assets/130828574/1fd389d8-1518-4ac7-b3ff-67bd20aba313)
->>>>>>> 8d573e0 (Update README.md)
-=======
-
-![image](lab8bLight.png)
->>>>>>> 102140c (Update README.md)
 
 ___
 
