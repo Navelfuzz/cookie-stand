@@ -12,8 +12,7 @@ ___
 ___
 
 ### Lab 09 Lighthouse
-
-![image](lab8bLight.png)
+![lab09lighthouse](https://github.com/Navelfuzz77/cookie-stand/assets/130828574/1fd389d8-1518-4ac7-b3ff-67bd20aba313)
 
 ___
 
