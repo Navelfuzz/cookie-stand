@@ -11,54 +11,114 @@
   </head>
  
   <body>
-    <header>
-      <h1>Salmon Cookie Stand</h1>
+    <header class="header">
       <img src="img/salmon.png" alt="Salmon Picture" class ="salmon-pic-right">
       <img src="img/salmon.png" alt="Salmon Picture" class ="salmon-pic-left">
+      <h1 class="storeName">Pat's Salmon Cookies Stores</h1>
+      <nav class="navbar">
+        <button><a class="nav" href="#about">About</a></button>
+        <button><a class="nav" href="#merchandise">Merchandise</a></button>
+        <button><a class="nav" href="#locations">Locations</a></button>
+        <button><a class="nav" href="html/sales.html">Sales Page</a></button>
+      </nav>
     </header>
-
+      
     <main>
-      <div class="sales-button"><button><a href="sales.html">Sales Records</a></button></div>
-      <h2>Home of the Salmon Cookie</h2>
-      <img src="img/frosted-cookie.jpg" alt="Salmon Cookie" class="salmon-cookie">
-      <p>We sell cookies, treats, desserts, t-shirts and more!</p>
-      <div class="fish-products">
-        <img src="img/fish.jpg" alt="Fish" class="fish-art"> 
-        <img src="img/cutter.jpeg" alt="Cookie Cutter" class="cookie-cutter">
-        <img src="img/shirt.jpg" alt="Shirt" class="shirt"> 
-        <img src="img/chinook.jpg" alt="Chinook" class="chinook"> 
-      </div>
-      <h3>Visit one of our locations!</h3>
-      <section>
-        <h3>All of Our locations are open 6am - 7pm</h3>
-          <h3>SEATTLE</h3>
-          <p>12-34 St. <br>
-          Seattle, USA<br>
-          Tel: 123-456-7890</p>
-          <h3>TOKYO</h3>
-          <p>12-34 St.<br>
-          Tokyo, Japan <br>
-          Tel: 123-456-7890</p>
-          <h3>DUBAI</h3>
-          <p>12-34 St.<br>
-          Dubai, UAE <br>
-          Tel: 123-456-7890</p>
-          <h3>PARIS</h3>
-          <p>12-34 St.<br>
-          Paris, France <br>
-          Tel: 123-456-7890</p>
-          <h3>LIMA</h3>
-          <p>12-34 St.<br>
-          Lima, Peru <br>
-          Tel: 123-456-7890</p>
-      </section>  
-      
-      <h3>Read reviews from our amazing customers.</h3>
-      <img src="img/family.jpg" alt="Picture of Family" class="family-picture"> 
-      <p>"I love Salmon... I love Cookies... Finally a baker bold enough to mix the two" - Steven Wright</p>
-      
+      <section id="about">
+        <div id="aboutContent">
+          <h2>About Us:</h2>
+          <p>We started in this small post-card town in the Pacific Northwest</p>
+          <p>called Seattle. Salmon are a integral part of our food culture.</p>
+          <p>But we asked ourselves if we're making smoked salmon for dinner</p>
+          <p>or canning it for snacks later... What are we doing about dessert?</p>
+          <p>We decided the only thing that could properly pair with a meal of Coho</p>
+          <p>were Salmon Cookies!</p>
+        </div>
+      </section>
+
+      <section id="merchandise">
+        <figure>
+          <h3>Salmon Cookie Cutter</h3>
+          <img title="Salmon Cookie Cutter - $10.00" src="img/cutter.jpeg" alt="Salmon Shaped Cookie Cutter">
+          <figcaption>$10.00</figcaption>
+        </figure>
+        <figure>
+          <h3>Salmon T-Shirt</h3>
+          <img title="Salmon Tshirt - $15.00" src="img/shirt.jpg" alt="Salmon graphic t-shirts">
+          <figcaption>$15.00</figcaption>
+        </figure>
+        <figure>
+          <h3>Box: Dozen Salmon Cookies</h3>
+          <img title="Box: Dozen Salmon Cookies - $28.00" src="img/frosted-cookie.jpg" alt="Frosted Salmon Cookie">
+          <figcaption>$28.00</figcaption>
+        </figure>
+      </section>
+
+      <section id="locations">
+        <h2 id="loc">Locations</h2>
+          <div id="stores">
+            <address id="seattle"><h4>Original Store Seattle: </h4><br />
+              111 Queen Anne Ave N #102 <br />
+              Seattle, WA 98109 <br />
+              Hours: 6am-8pm Everyday!
+            </address>    
+            <address id="paris"><h4>Pat's Saumon Cookies Paris: </h4><br />
+              79-81 Quai de la Gare <br />
+              75013 Paris, France <br />
+              Hours: 6am-8pm Everyday!
+            </address> 
+            <address id="dubai"><h4>Pat's Cookie Bazaar Dubai: </h4><br />
+              13 45th St - Jumeirah <br />
+              Jumeirah 2 - Dubai - UAE <br />
+              Hours: 6am-8pm Everyday!
+            </address> 
+            <address id="lima"><h4>Salmon Cookies Peru: </h4><br />
+              Av. Emancipacion 729 <br />
+              Lima 15001, Peru <br />
+              Hours: 6am-8pm Everyday!
+            </address> 
+            <address id="tokyo"><h4>Pat's Treats Tokyo: </h4><br />
+              1 Chome-10-1 Nihonbashiningyocho <br />
+              Chuo City, Tokyo 103-0013, Japan <br />
+              Hours: 6am-8pm Everyday!
+            </address> 
+        </div>
+      </section>
+
+      <section id="reviews">
+        <h3>Read reviews from our amazing customers.</h3>
+          <img src="img/family.jpg" alt="Picture of Family" class="family-picture"> 
+          <p>"I love Salmon... I love Cookies... Finally a baker bold enough to mix the two" - Steven Wright</p>
+      </section>
     </main>
-    <footer>&copy Code Fellows</footer>
+
+    <footer>
+      <address>Contact us: <br />customerServic@patscookies.com <br/> 
+      1-(888)-444-4219</address>
+      <footer>&copy Code Fellows</footer>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
     <script src="js/app.js" async defer></script>
   </body>
 

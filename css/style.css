@@ -1,8 +1,80 @@
+/** ------ Body  ------ */
+
 body {
   background-color:  #ffb39c;
 }
 
-/* BUTTONS */
+/** ------ Header ------ */
+
+.salmon-pic-left {
+  transform: scaleX(-1);
+  max-width: 19%;
+  float: left
+}
+
+.salmon-pic-right {
+  transform: scaleX(1);
+  max-width: 19%;
+  max-width: 19%;
+  float: right
+}
+
+
+/** ------ headers & p ------ */
+
+h1 {
+  font-size: 40px;
+  color: Black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+h3 {
+  font-size: 30px;
+  color: rgb(99, 0, 114);
+  margin-bottom: 20px;
+  margin-top: 25px;
+  text-align: center;
+  font-family: 'Inria Serif', serif
+
+}
+
+h4 {
+  font-size: 25px;
+  padding-top: 40px;
+  margin-top: 0px;
+  font-weight: bolder;
+}
+
+p {
+  font-family: 'Inria Serif', serif;
+  color: black;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/** ------ Nav ------ */
+
+.navbar {
+  text-align: center;
+}
+
 button {
   background-color: #fbeee0;
   border: 2px solid #422800;
@@ -20,118 +92,47 @@ button {
 
 }
 
-.sales-button {
-  display:flex;
+/** ------ Merchandise ------ */
+
+#merchandise {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+figure {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+/** ------ Locations ------ */
+
+.loc {
   justify-content: center;
-  margin-top: 40px;
 }
 
-
-.home-button {
-  display:flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-/* BUTTON END */
-
-
-/* IMAGES  */
-
-.salmon-pic-left {
-  transform: scaleX(-1);
-  max-width: 19%;
-  float: left
-}
-
-.salmon-pic-right {
-  transform: scaleX(1);
-  max-width: 19%;
-  max-width: 19%;
-  float: right
-}
-
-.salmon-cookie {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
-
-.shirt {
-  height: 300px;
-}
-
-.fish-products {
-  display:flex;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 50px;
-}
-
-.chinook {
-  width: 40%;
-
-}
-
-.family-picture {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-
-}
-
-
-/* IMAGES END  */
-
-h1 {
-  font-size: 40px;
-  color: Black;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
-h2 {
-  font-size: 30px;
-  text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-
-}
-
-p {
-  font-family: 'Inria Serif', serif;
-  color: black;
-  text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-
-h3 {
-  font-size: 30px;
-  color: rgb(99, 0, 114);
-  margin-bottom: 20px;
-  margin-top: 25px;
-  text-align: center;
-  font-family: 'Inria Serif', serif
-
-}
-
-th {
-  font-weight:900;
-}
-
-td {
+#locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
+
+address {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.storeName {
+  font-weight: 550;
+}
+
+/** ------ Reviews ------ */
+
+#reviews {
+  font-weight: bold;
+}
+
+/** ------ Footer ------ */
 
 footer {
   font-size: 20px;
@@ -144,8 +145,24 @@ footer {
 
 }
 
+/**
+ * The Section covers the exclusive items to sales.html
+ */
 
-/* TABLES STYLE PAGE */
+ .home-button {
+  display:flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/** ------ Data Chart & Table ------ */
+
+.data-chart {
+  display:flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-top: 200px;
+}
 
 table * {
   font-family: 'Archivo', sans-serif;
@@ -156,9 +173,38 @@ table * {
  
 }
 
-.data-chart {
-  display:flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-top: 200px;
+th {
+  font-weight:900;
 }
+
+td {
+  text-align: center;
+}
+
+/** ------ Form Container ------ */
+
+#form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+form {
+  text-align: center;
+}
+
+legend {
+  font-weight: bold;
+  text-align: center;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+}
+
